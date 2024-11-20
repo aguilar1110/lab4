@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let c="";
+
+        while(c!="salir"){
+        let a= parseInt(prompt("Ingrese número 1"));
+        let b= parseInt(prompt("Ingrese número 2"));
+        c= prompt("Ingrese la operación que desea: +, -, *, /");
+        alert(realizarOperacion(a,b,c));
+        }
+        
+        function realizarOperacion(num1, num2, operacion){
+            if(operacion == "+"){
+                let suma = num1 + num2;
+                return suma;
+            }
+            
+            else if (operacion == "-"){
+                let resta = num1 - num2;
+                return resta;
+            }
+
+            else if (operacion == "*"){
+                let dmultiplicacion = num1 * num2
+                return multiplicacion;
+            }
+
+            else if (operacion == "/"){
+                if (num2 == 0){
+                    return "No se puede realizar la división por 0";
+                }
+                else {
+                let division = num1 / num2;
+                return division ; 
+                }
+                }
+                
+            else {
+                document.write("Operación invalida")
+            }
+        }
+
+    
+        
+    </script>
+</body>
+</html>
